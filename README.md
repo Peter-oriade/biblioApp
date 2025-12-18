@@ -1,3 +1,7 @@
+<p align="right">
+  <a href="README.pt-BR.md">🇧🇷 Português</a>
+</p>
+
 # biblioApp
 
 **biblioApp** is a full‑stack library management application built with multiple modern technologies, organized as a monorepo. The project demonstrates the integration of a Django backend with an Oracle database, a Node.js/Express REST API for authentication and business logic, and a Quasar/Vue.js frontend.
@@ -37,6 +41,8 @@ Each service can be developed and executed independently, but together they form
 ## 1. biblioApp-django-app
 
 Django application responsible for core data management, admin interface, and Oracle Database integration.
+
+<img src="docs/images/django-app.png" alt="django-app" width="100%"/>
 
 ### Technologies
 
@@ -93,11 +99,20 @@ Start the development server:
 python manage.py runserver
 ```
 
+### Access Control Note
+
+User registration is currently open and all authenticated users have full access to application features.
+This behavior is intentional for academic demonstration purposes.
+
+In a production scenario, role-based access control (RBAC) would be enforced to separate administrative and standard user permissions.
+
 ---
 
 ## 2. biblioApp-express-api
 
 REST API built with Express.js. This service handles authentication, JWT validation, Firebase integration, and communication with the Oracle database.
+
+<img src="docs/images/express-api.png" alt="express-api" width="100%"/>
 
 ### Technologies
 
@@ -156,6 +171,8 @@ npm run start
 ## 3. biblioApp-quasar-front
 
 Frontend application built with **Quasar Framework** and **Vue.js**, responsible for the user interface and user experience.
+
+<img src="docs/images/quasar-front.png" alt="quasar-front" width="100%"/>
 
 ### Technologies
 
